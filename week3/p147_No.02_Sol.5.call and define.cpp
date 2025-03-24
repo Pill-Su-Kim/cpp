@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "header file.h"
 
 int reverse(int num) {
     int reversed = 0;
@@ -23,4 +23,3 @@ int main() {
 
     return 0;
 }
-
