@@ -36,18 +36,18 @@ void play_game() {
 
             current_time = time(NULL);
             if (current_time - start_time >= TIME_LIMIT) {
-                printf("\n⏳ 제한 시간이 초과되었습니다!\n");
+                printf("\n 제한 시간이 초과되었습니다!\n");
                 printf("게임 종료! 총 맞힌 개수: %d개\n", correct);
                 return;
             }
 
             if (user_input != answer) {
-                printf("❌ 오답! 다시 시도하세요.\n");
+                printf("Damn !!오답! 다시 시도하세요.\n");
             }
 
         } while (user_input != answer);
 
-        printf("✅ 정답!\n");
+        printf("Wow! 정답!\n");
         correct++;
     }
 
