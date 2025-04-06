@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-#define SIZE 5
+#include"p202_No.2-3 header.h"
 
 // 5x5 배열을 0과 1로 랜덤하게 채우는 함수
 void fillArray(int map[SIZE][SIZE]) {
