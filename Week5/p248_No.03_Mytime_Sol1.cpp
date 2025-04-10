@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "p248_No.03_Mytime_header_Sol1.h"  // 구조체랑 함수 선언 불러오기
 
-// 함수 정의
+// 함수 정의 // 헤더 파일에 선언한 구조체를 그대로 반환하는 방식
 MyTime addTime(MyTime t1, MyTime t2) {
     MyTime result;
 
