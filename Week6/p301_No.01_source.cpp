@@ -1,14 +1,14 @@
 // main.cpp
 #include <iostream>
-#include "p301_No.01_header.h"
+#include "p301_No_01_header.h"
 
 using namespace std;
 
 int main() {
     MyTime t1, t2, t3;
 
-    t1.convert(3661);  // 1시간 1분 1초
-    t2.convert(3599);  // 59분 59초
+    t1.convert(3666);  // 1시간 1분 1초 -> 3666초를 시간, 분 ,초로 변환
+    t2.convert(3599);  // 59분 59초 -> 3599초를 시간, 분 ,초로 변환
 
     cout << "t1: ";
     t1.print();

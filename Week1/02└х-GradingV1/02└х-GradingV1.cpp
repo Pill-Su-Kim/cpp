@@ -1,9 +1,9 @@
 #include <stdio.h>
-void main(void)
+int main(void)
 {
 	int score;
 	char grade;
-	printf("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½: ");
 	scanf("%d", &score);
 
 	if (score >= 90) grade = 'A';		// 90 <= score
@@ -11,5 +11,5 @@ void main(void)
 	else if (score >= 70) grade = 'C';	// 70 <= score < 80
 	else if (score >= 60) grade = 'D';	// 60 <= score < 70
 	else grade = 'F';					//score < 60
-	printf(" ÇĞÁ¡Àº %cÀÔ´Ï´Ù.\n", grade);
+	printf(" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ %cï¿½Ô´Ï´ï¿½.\n", grade);
 }
