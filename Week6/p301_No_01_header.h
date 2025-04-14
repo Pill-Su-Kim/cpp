@@ -6,21 +6,21 @@
 #include <iomanip> //selfill()을 사용하기 위한 헤더
 
 class MyTime {
-private:
+private:  // 기존의 Mytime 구조체의 변수들이다-> 모두 private로 이동, 헤더파일 에서의 class에서 inline함수 구현시 inline 을 붙여야함
     int hours;
     int minutes;
     int seconds;
 
 public:
-    // 초 단위로 시간 변환
+    // 초 단위로 시간 변환 멤버함수
     inline void convert(double duration) {
-        int total_seconds = static_cast<int>(duration);
+        int total_seconds = static_cast<int>(duration);// static_cast -> c++스타일 타입 변환, (int)durarion ->c 스타일 변환, 즉. static_cast<int>()는 괄호 안의 타입을 어떤 것이 오든 정수int 로 변환
         hours = total_seconds / 3600;
         minutes = (total_seconds % 3600) / 60;
         seconds = total_seconds % 60;
     }
 
-    // 시간 출력
+    // 시간 출력 멤버함수
     inline void print() {
         std::cout << hours << "시간 " << minutes << "분 " << seconds << "초" << std::endl;
         std::cout << std::setw(2) << std::setfill('0') << hours << ":"
@@ -29,7 +29,7 @@ public:
         
     }
 
-    // 두 시간 더하기
+    // 두 시간 더하기 멤버함수
     inline MyTime add(MyTime t) {
         MyTime result;
         int total_sec1 = hours * 3600 + minutes * 60 + seconds;
@@ -38,11 +38,11 @@ public:
         return result;
     }
 
-    // 시간 초기화
+    // 시간 초기화 멤버함수
     inline void reset() {
         hours = minutes = seconds = 0;
     }
-    
+    // 시간 입력 멤버함수
     inline void read() {
         std::cout << "시간(시간 분 초)을 입력하세요: ";
         std::cin >> hours >> minutes >> seconds; //사용자 입력 → cin이 받음 → 변수(hours, minutes, seconds)에 저장

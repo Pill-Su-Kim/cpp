@@ -1,0 +1,3 @@
+parsimonious 색한
+apple 사과
+gregarious 사교적인
