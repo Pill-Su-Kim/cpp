@@ -3,7 +3,8 @@
 using namespace std;
 
 // 직접 복소수 구조체 정의
-struct MyComplex {
+class MyComplex {
+public: 
     double real;
     double imag;
 
