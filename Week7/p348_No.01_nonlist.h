@@ -13,7 +13,7 @@ private:
 
 public:
     // 멤버 초기화 리스트 없이, 중괄호 { } 안에서 대입하는 생성자
-    MyTime(int h = 0, int m = 0, int s = 0) {   // 만약 여기에 int h =0 같이 0으로 초기화를 안해두면 호출시 쓰레기 값이 나옴 -> 값이 무작위로 나옴
+    MyTime(int h=0 , int m=0 , int s=0 ) {   // 만약 여기에 int h =0 같이 0으로 초기화를 안해두면 호출시 쓰레기 값이 나옴 -> 값이 무작위로 나옴
         hours = h;
         minutes = m;
         seconds = s;
@@ -34,11 +34,11 @@ public:
     }
 
     inline MyTime add(MyTime t) {
-        MyTime result;
+        //MyTime result;
         int total_sec1 = hours * 3600 + minutes * 60 + seconds;
         int total_sec2 = t.hours * 3600 + t.minutes * 60 + t.seconds;
-        result.convert(total_sec1 + total_sec2);
-        return result;
+       // result.convert(total_sec1 + total_sec2);
+      //  return result;
     }
 
     inline void reset() {

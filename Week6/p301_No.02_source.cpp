@@ -24,7 +24,7 @@ int main() {
     cout << "\n단어들을 파일 '" << filename << "'에 저장했습니다." << endl;
 
     // 새로운 객체로 파일에서 단어 읽기
-    Mydic newDic;
+    Mydic newDic;        //load함수를 통해 파일을"mydictionary.txt"파일을 읽고 불러온다
     newDic.load(filename);
 
     // 파일에서 읽은 단어장 출력
