@@ -28,7 +28,7 @@ class Monster {
         }
     }
 public:
-    Monster(std::string n = "몬스터", std::string i = "怪", int px = 0, int py = 0)
+    Monster(std::string n = "몬스터", std::string i = "#", int px = 0, int py = 0)
         : name(n), icon(i), x(px), y(py), nItem(0), nEnergy(100) { count++; } // count 증가
     ~Monster() { 
         std::cout << "\t" << name << icon << " 소멸합니다~~~\n"; 

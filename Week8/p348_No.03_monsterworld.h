@@ -31,8 +31,8 @@ class MonsterWorld {
             mon[i].draw(canvas);
         canvas.print("[ Monster World (몬스터월드) ]");
 
-        std::cerr << " 전체 이동 횟수 = " << nMove << std::endl;
-        std::cerr << " 남은 아이템 수 = " << countItems() << std::endl;
+        std::cout << " 전체 이동 횟수 = " << nMove << std::endl; // std::cerr 대신 std::cout 사용
+        std::cout << " 남은 아이템 수 = " << countItems() << std::endl;
         for (int i = 0; i < nMon; i++)
             mon[i].print();
     }
@@ -49,7 +49,7 @@ public:
     }
     void play(int maxwalk, int wait) {
         print();
-        std::cerr << " 몬스터를 시작합니다...";
+        std::cout << " 몬스터를 시작합니다..."; // std::cerr 대신 std::cout 사용
         getchar();
         for (int i = 0; i < maxwalk; i++) {
             for (int k = 0; k < nMon; k++)
