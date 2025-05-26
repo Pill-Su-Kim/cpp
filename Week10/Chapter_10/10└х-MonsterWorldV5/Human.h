@@ -5,7 +5,7 @@ enum Direction { Left = 75, Right = 77, Up = 72, Down = 80 };
 
 class Human : public Monster {
 public:
-	Human(string n = "¹Ì·¡ÀÎ·ù", string i = "¡Ï", int px = 0, int py = 0)
+	Human(string n = "ë¯¸ë˜ì¸ë¥˜", string i = "H", int px = 0, int py = 0)
 		: Monster(n, i, px, py) {}
 	~Human() { cout << " [Human   ]"; }
 	int getDirKey() { return getche() == 224 ? getche() : 0; }
