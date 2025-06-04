@@ -73,7 +73,7 @@ public:
                     pMon[k]->move(world.Data(), xMax, yMax);
                 }
             }
-            // Tuman 플레이어 이동
+            // Tuman 플레이어 이동,  getDirKey()로 입력 키를 받아 사람이 조작하는 객체만 수동 이동.
             for (int k = 0; k < nMon; k++) {
                 Tuman* tuman = dynamic_cast<Tuman*>(pMon[k]);
                 if (tuman) { // Tuman인 경우
